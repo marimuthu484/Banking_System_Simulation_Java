@@ -44,28 +44,35 @@ Overview
 ```
 FinSafe/
 │
-├── src/
-│   └── main/
-│       └── java/
-│           ├── app/
-│           │   ├── BankApp.java          # Main application entry point
-│           │   └── BankApp.class
-│           │
-│           ├── service/
-│           │   ├── AuthService.java      # Authentication logic
-│           │   ├── AuthService.class
-│           │   ├── BankService.java      # Banking operations
-│           │   └── BankService.class
-│           │
-│           ├── util/
-│           │   ├── FileUtil.java         # File handling utilities
-│           │   └── FileUtil.class
-│           │
-│           ├── data.txt                  # Transaction records
-│           └── users.txt                 # User account data
-│
-├── README.md
-└── .gitignore
+src
+    └───main
+        └───java
+            │   data.txt
+            │   users.txt
+            │   
+            ├───app
+            │       BankApp.class
+            │       BankApp.java
+            │       
+            ├───model
+            │       Account.class
+            │       Account.java
+            │       SavingsAccount.class
+            │       SavingsAccount.java
+            │       
+            ├───service
+            │       AuthService.class
+            │       AuthService.java
+            │       BankOperations.class
+            │       BankOperations.java
+            │       BankService.class
+            │       BankService.java
+            │       
+            └───util
+                    FileUtil.class
+                    FileUtil.java
+                    TransactionType.class
+                    TransactionType.java
 ```
 
 ### Module Descriptions
